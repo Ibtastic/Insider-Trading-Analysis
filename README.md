@@ -3,12 +3,16 @@
 (I've been working on a blog post for this repo, until then I'll use the readme file for explaining the analysis.)
 
 Insider trading is the buying or selling of a security by someone who has access to material nonpublic information about the security. Insider trading can be illegal or legal depending on when the insider makes the trade. It is illegal when the material information is still nonpublic.
+
 However, it is not illegal to own, or buy and sell shares of the company you work for, as long as the transactions are being disclosed publicly in a timely manner and as long as the information that is being used to trade is publicly available.
 The Securities and Exchange Commission has rules to protect investments from the effects of insider trading. The SEC has prosecuted insider trading cases against Directors, officers and employees of involved corporations as well as tepees. 
+
 When a corporate insider buys or sells his company's security this trading activity must be reported to the SEC, which then discloses this information to the public .Even though the trading is disclosed, Corporate Insiders can only trade their Corporation's Securities during certain windows of time when there is no material non-public information that might affect a buyer or seller's trading decision.
 In this blog post I present the result of my Insider Trading Analysis , the code for which can be found in this repository.
+
 I've scraped 30,000 rows of data from Insidertrading.org for the time period August 18 2016 to December 26 2017. This data contains features such as Transaction Date, Company Name, Company Stock Symbol, Insider Name, Transaction Volume, Price Per share etc.
 Since the data didn't have the industry to which a company belongs to I matched up the Industry dataset from NASDAQ to the stock symbols in the above data.
+
 Okay, let's first view the Insider activity over time for our dataset.
 
 ![](https://github.com/Ibtastic/Insider-Trading-Analysis/blob/master/plots/insider%20activity%20over%20time.png)
@@ -18,8 +22,11 @@ Most of the activity is concentrated between October 2016 to January 2017. Let's
 ![](https://github.com/Ibtastic/Insider-Trading-Analysis/blob/master/plots/zoomed%20in%20view.png)
 
 The selling activity exceeds buying except for the data after December 25 and before Oct 16. Our data has :-
+
 12427 rows for buying insider transactions 
+
 17573 rows for selling insider transactions.
+
 There is a peak in Insider activity between November 13 to November 15.
 
 ## Analyzing Distribution of number of Insiders per Company
@@ -28,7 +35,7 @@ Here, I have calculated the number of Insiders each company has and then grouped
 
 ![](https://github.com/Ibtastic/Insider-Trading-Analysis/blob/master/plots/distribution%20of%20number%20of%20insiders%20per%20company.png)
 
-This plot is almost exponential having a heavy tail towards the left , indicating that most companies have less number of insiders. However, there are only a few companies (particularly involved in buying activity) that have a large number of insiders. This quite accurately reflects the real world scenario.
+This plot is almost exponential having a heavy tail towards the left , indicating that **most companies have less number of insiders**. However, there are only a few companies (particularly involved in buying activity) that have a large number of insiders. This quite accurately reflects the real world scenario.
 
 ## Analyzing Distribution of number of transactions per Insider
 
@@ -77,7 +84,7 @@ In this plot I analyze Insider Selling activity(volume) over time against the SP
 
 ![](https://github.com/Ibtastic/Insider-Trading-Analysis/blob/master/plots/Insider%20Selling%20activity%20vs%20SP500.png)
 
-This plot clearly suggests that Insiders are contrarians. They tend to sell more when market buys and buy more when market sells.Insiders are found to be net buyers of relatively low P/E stocks and net sellers of relatively high P/E stocks.
+This plot clearly suggests that **Insiders are contrarians**. They tend to sell more when market buys and buy more when market sells.Insiders are found to be net buyers of relatively low P/E stocks and net sellers of relatively high P/E stocks.
 
 ## Short Term effects of Insider Trades on Stock prices
 
