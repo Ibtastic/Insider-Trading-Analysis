@@ -111,7 +111,7 @@ This is another debatable question in the Finance Industry . While Insiders are 
 I answer these question for the data I used. 
 To represent the broad market, I use the SP500 data from Yahoo Finance of the same dates as the Insider Transactions date. I then calculate returns after a month, six months and a year following the transaction.
 
-#[](https://github.com/Ibtastic/Insider-Trading-Analysis/blob/master/plots/longterm.png)
+![](https://github.com/Ibtastic/Insider-Trading-Analysis/blob/master/plots/longterm.png)
 
 Again, there are outliers for Insider Purchased stocks where the returns are in thousands, and they seem to increase as time passes. Let’s zoom in the data, for a better view.
 
