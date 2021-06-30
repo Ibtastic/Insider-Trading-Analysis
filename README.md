@@ -1,7 +1,5 @@
 # Insider-Trading-Analysis
 
-(I've been working on a blog post for this repo, until then I'll use the readme file for explaining the analysis.)
-
 Insider trading is the buying or selling of a security by someone who has access to material nonpublic information about the security. Insider trading can be illegal or legal depending on when the insider makes the trade. It is illegal when the material information is still nonpublic.
 
 However, it is not illegal to own, or buy and sell shares of the company you work for, as long as the transactions are being disclosed publicly in a timely manner and as long as the information that is being used to trade is publicly available.
